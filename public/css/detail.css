@@ -1,0 +1,404 @@
+
+/* ヘッダー */
+.wrapper{
+  width:100%;
+  overflow:hidden;
+}
+header{
+    background: rgba(240, 162, 71);
+    position: fixed; 
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 2;
+  }
+  .logo{
+    display: inline-block;
+    margin-left: 80px;
+  }
+  .nav{
+    display: inline-block;
+    float: right;
+    margin: 30px 60px 0 0;
+  }
+  .nav a{
+    margin-right: 5px;
+    padding-right: 5px;
+    color: black;
+  }
+  .right-border{
+    border-right: 2px solid red;
+  }
+  /* top */
+  .top{
+    text-align: center;
+    position: relative;
+  }
+  .top-des{
+    position: absolute;
+    top: 300px;
+    left: 28%;
+  }
+  .top-des span{
+    font-size: 50px;
+  }
+  .top-des h2{
+    font-size: 55px;
+    margin: 20px 0;
+  }
+  .top-des h3{
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+  }
+  .top-des p{
+    font-size: 30px;
+  }
+  .top-des a{
+    margin-top: 30px;
+  }
+  /* 悩み */
+  .nayami-title{
+    background: rgba(240, 162, 71);
+    text-align: center;
+    padding: 20px 0;
+  }
+  .sankaku{
+    width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 0 20px;
+  margin: 0 auto;
+  border-color: rgba(240, 162, 71) transparent transparent transparent;
+  }
+  
+  .nayamilist ul{
+    list-style: none;
+    margin: 30px auto;
+    font-size: 30px;
+    position: relative;
+    left: 30%;
+  }
+  .nayamilist li::before{
+    font-family: FontAwesome;
+    padding-right: 10px;
+    content: '\f072'; /* アイコンのunicode */
+  }
+  .nayamilist li{
+    letter-spacing: 0.1em;
+  }
+  /* 問い合わせ */
+  .toiawase{
+    background: rgb(58, 130, 238);
+    text-align: center;
+    padding: 20px 0;
+    margin: 30px 0;
+  }
+  .toiawase h2{
+    display: inline-block;
+    margin-right: 30px;
+    color:white;
+  
+  }
+  .toiawase a{
+    display: inline-block;
+  }
+  /* 特徴 */
+  .toutyou{
+    text-align: center;
+  }
+  .toutyou h2{
+    font-size: 40px;
+    padding-top: 30px;
+  }
+  .toutyou p{
+    font-weight: 600;
+    margin: 20px 0 50px;
+  }
+  .features{
+    margin-top: 30px;
+  }
+  .feature{
+    position: relative;
+  }
+  .feature span{
+    border: 1px solid rgb(58, 130, 238);
+    color: white;
+    position: absolute;
+    top:-10px;
+    left: -10px;
+    background: rgb(58, 130, 238);
+    padding: 5px 10px;
+  }
+  .feature h2{
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(186, 184, 184, 0.78);
+    padding-bottom: 7px;
+  }
+  /* ブログ */
+  .blog{
+    text-align: center;
+    padding-top: 40px;
+  }
+  .blog h2{
+    font-size: 40px;
+  }
+  .blog p{
+    font-weight: 600;
+    margin: 20px 0 50px;
+  }
+  .post img{
+    width: 100%;
+    height: 165px;
+  }
+  .post h2{
+    font-size: 17px;
+    font-weight: 600;
+    padding:20px 0;
+    border-bottom: 1px solid rgba(206, 208, 209, 0.6);
+  }
+  .post {
+      padding: 0;
+      position: relative;
+      z-index: 1; /* 必要であればリンク要素の重なりのベース順序指定 */
+  }
+  .damy {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-indent:-999px;
+      z-index: 2; /* 必要であればリンク要素の重なりのベース順序指定 */
+  }
+  .damy:hover{
+    background-color: rgba(84, 87, 88, 0.66);
+  }
+  .moto{
+    margin-top: 20px;
+  }
+  /* メリット */
+  .benefit h2{
+    text-align: center;
+    padding: 50px 0;
+  }
+  .table{
+    padding: 0 80px;
+  }
+  tr>th{
+    text-align: center;
+  }
+  .home{
+    background: rgba(229, 238, 44, 0.52);
+  }
+  /* コース */
+  .cose{
+    text-align: center;
+  }
+  .cose h2{
+      font-size: 40px;
+  }
+  .cose p{
+    font-weight: 600;
+    margin: 20px 0 50px;
+  }
+  .cose img{
+    width: 100%;
+    height: 180px;
+  }
+  .couse{
+    padding: 0;
+  }
+  .couse h3{
+    background: black;
+    color: white;
+  }
+  /* flow */
+  .flow>p{
+    text-align: center;
+    font-weight: 600;
+  }
+  .flow h2{
+    text-align: center;
+    padding: 50px 0 0;
+  }
+  .step{
+    border: 1px solid rgba(180, 184, 175, 0.78);
+    border-radius: 40px;
+    margin: 10px 320px;
+    position: relative;
+    height: 66px;
+    background:rgba(240, 162, 71);
+  }
+  .step span{
+    border: 1px solid rgba(180, 184, 175, 0.78);
+    border-radius: 50%;
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    top:-5px;
+    color: white;
+    font-weight: 600;
+    padding: 20px 0 0 9px;
+    background: rgb(58, 130, 238);
+  }
+  .step p{
+    position: absolute;
+    left: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 7px;
+  }
+  .step h3{
+    font-size: 15px;
+    position: absolute;
+    top:40px;
+    left: 150px;
+  }
+  /* 体験 */
+  .taiken{
+    text-align: center;
+  }
+  .taiken h2{
+    padding: 30px 0 0;
+  }
+  .taiken p{
+    letter-spacing: 0.1em;
+    margin-bottom: 0px;
+  }
+  .coment{
+    position: relative;
+    margin-top: 80px;
+  }
+  .coment img{
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 100px;
+  }
+  .coment h2{
+    font-size: 20px;
+    font-weight: 100;
+    padding-top: 50px;
+  }
+  .coment h3{
+    border-top: 1px solid rgba(204, 206, 209, 0.77);
+    border-bottom: 1px solid rgba(204, 206, 209, 0.77);
+    font-size: 25px;
+    font-weight: 600;
+  }
+  /* qa */
+  .faq h2{
+    text-align: center;
+      padding: 30px 0 0;
+  }
+  .q{
+    border: 1px solid rgba(166, 170, 166, 0.78);
+    margin: 20px 340px;
+    position: relative;
+    padding: 7px 0 7px 10px;
+  }
+  .q h3{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .fa-chevron-down{
+    position: absolute;
+    right: 14px;
+    top:8px;
+  }
+  .fa-question-circle{
+    color: rgb(58, 130, 238);
+    padding-right: 10px;
+  }
+  /* 会社概要 */
+  .company-info h2{
+    text-align: center;
+    padding: 30px 0;
+  }
+  .map{
+    position: relative;
+  }
+  .company-info iframe{
+    position: absolute;
+    right: 10px;
+  }
+  /* フッター */
+  footer{
+    background: rgb(180, 180, 180);
+    margin-top: 200px;
+    height: 80px;
+  }
+  footer p{
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 30px
+  }
+  /* 記事一覧ページ */
+  .kijiitiran{
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 100px;
+  }
+  .kijiitiran h2{
+    font-size: 40px;
+  }
+  .kijiitiran p{
+    font-weight: 600;
+    margin: 20px 0 50px;
+  }
+  .kiji img{
+    width: 100%;
+    height: 165px;
+  }
+  .kiji h2{
+    font-size: 17px;
+    font-weight: 600;
+    padding:20px 0;
+    border-bottom: 1px solid rgba(206, 208, 209, 0.6);
+  }
+  .kiji {
+    margin: 10px;
+      padding: 0;
+      position: relative;
+      z-index: 1; /* 必要であればリンク要素の重なりのベース順序指定 */
+  }
+  
+  /* single */
+  .single img{
+    margin: 0px auto;
+    display: block;
+  }
+  .single-flex{
+    display: flex;
+    margin-top: 100px
+  }
+  .single-flex h2{
+    margin-top: 120px;
+  }
+  .content{
+    width: 70%;
+    margin-top: 40px;
+  }
+  /* contact */
+  .pages{
+    margin: 100px auto;
+    text-align: center;
+  }
+  .page{
+    margin: 0 auto;
+    text-align: center;
+  }
+  form input,textarea{
+    width: 600px;
+  }
+  .wpcf7-submit{
+    width: 200px;
+    border: none;
+    background: rgb(62, 218, 106);
+    border-radius: 5px;
+    padding: 15px 0;
+  }
+  @media screen and (max-width: 480px) {
+    
+  }
